@@ -18,7 +18,10 @@ async function main() {
         input: process.stdin,
         output: process.stdout
       });
-    
+      
+      //to suppress deprecation warning 
+      process.noDeprecation = true;
+
    // Ask the user for input
     userInterface.question('Please enter your prompt:' , async (input) => {
         try {
