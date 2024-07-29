@@ -1,13 +1,10 @@
-  
-
 {
   "name": "openaichatbot",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-
-  "type":"module",
-    "scripts": {
+  "type": "module",
+  "scripts": {
     "dev": "node script.js"
   },
   "keywords": [],
@@ -16,6 +13,7 @@
   "dependencies": {
     "ai": "^3.2.37",
     "dotenv": "^16.4.5",
-    "openai": "^4.53.2"
+    "openai": "^4.53.2",
+    "whatwg-url": "^14.0.0"
   }
 }
