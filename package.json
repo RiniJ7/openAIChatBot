@@ -1,0 +1,17 @@
+{
+  "name": "openaichatbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node script.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ai": "^3.2.37",
+    "dotenv": "^16.4.5",
+    "openai": "^4.53.2"
+  }
+}
