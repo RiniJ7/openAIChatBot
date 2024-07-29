@@ -7,9 +7,10 @@ config()
 import { OpenAI } from "openai";
 import readline from "readline";
 
-
+//to check if API key works
 // console.log(process.env.API_KEY)
 
+// Create an instance of OpenAI with the API key
 const openai = new OpenAI({ apiKey: process.env.API_KEY });
 
 async function main() {
@@ -18,8 +19,8 @@ async function main() {
         output: process.stdout
       });
     
-
-    userInterface.question('Please enter your prompt' , async (input) => {
+   // Ask the user for input
+    userInterface.question('Please enter your prompt:' , async (input) => {
         try {
             const completion = await openai.chat.completions.create({
                 messages: [{ role: "user", content: input }],
