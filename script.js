@@ -44,5 +44,19 @@ async function main() {
 
 }
 
+// If the user quota is completely used, here is a fallback mechanism
+// if (error.response) {
+//     if (error.response.status === 429) {
+//         console.error('You have exceeded your current quota. Please check your plan and billing details.');
+//     } else {
+//         console.error('Error with OpenAI API:', error.response.data);
+//     }
+// } else {
+//     console.error('Error', error.message);
+// }
+
+
+
+
 
 main();
